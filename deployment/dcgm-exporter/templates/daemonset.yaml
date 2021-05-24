@@ -100,7 +100,7 @@ spec:
             path: /health
             port: {{ .Values.service.port }}
           initialDelaySeconds: 20
-          periodSeconds: 5
+          periodSeconds: 20
         readinessProbe:
           httpGet:
             path: /health
